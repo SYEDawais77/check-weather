@@ -64,6 +64,10 @@ export default function Home() {
       return "bg-gradient-to-r from-blue-400 to-blue-600";
     if (condition?.includes("Cloudy"))
       return "bg-gradient-to-r from-gray-400 to-gray-600";
+    if (condition?.includes("Partly cloudy"))
+      return "bg-gradient-to-l from-gray-400 to-gray-600";
+    if (condition?.includes("thunder"))
+      return "bg-gradient-to-r from-gray-600 to-gray-800";
     if (condition?.includes("Overcast"))
       return "bg-gradient-to-r from-gray-500 to-gray-700";
     if (condition?.includes("Mist"))
